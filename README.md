@@ -80,7 +80,7 @@ export default function ScoutingApp() {
       <h1 className="text-3xl font-bold mb-6">FRC Scouting w/ Live Sync + QR Ready</h1>
 
       <div className="mb-10">
-        <h2 className="text-2xl font-semibold mb-2">🎨 MoodBoard (Real-Time)</h2>
+        <h2 className="text-2xl font-semibold mb-2"> MoodBoard (Real-Time)</h2>
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {teams.map(team => (
             <li key={team.id} className="bg-white rounded shadow p-4">
@@ -97,18 +97,18 @@ export default function ScoutingApp() {
       </div>
 
       <div className="mb-10">
-        <h2 className="text-2xl font-semibold mb-2">🧠 Strategy Generator (Synced)</h2>
+        <h2 className="text-2xl font-semibold mb-2"> Strategy Generator (Synced)</h2>
         <Button onClick={() => generateStrategy(teams.slice(0, 3))}>Generate for Top 3</Button>
         <p className="mt-2 bg-white rounded shadow p-4 text-sm">{strategyOutput}</p>
       </div>
 
       <div className="mb-10">
-        <h2 className="text-2xl font-semibold">📸 QR Code Upload Ready</h2>
+        <h2 className="text-2xl font-semibold"> QR Code Upload Ready</h2>
         <p className="text-sm">QR scanning component can be added using libraries like <code>react-qr-reader</code> or <code>html5-qrcode</code>. Store scanned data directly into Firestore for instant updates.</p>
       </div>
 
       <div className="mb-10">
-        <h2 className="text-2xl font-semibold">🚀 Firebase Hosting Instructions</h2>
+        <h2 className="text-2xl font-semibold">Firebase Hosting Instructions</h2>
         <ul className="list-disc ml-6 text-sm">
           <li>Run <code>npm run build</code> to generate static files</li>
           <li>Install Firebase CLI: <code>npm install -g firebase-tools</code></li>
